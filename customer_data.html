@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Data Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title">Customer Data Form</h3>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        
+                        <!-- Name field -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name (Required, Max Length: 100)</label>
+                            <input type="text" id="name" name="name" class="form-control" maxlength="100" required>
+                        </div>
+
+                        <!-- Photo uploader -->
+                        <div class="mb-3">
+                            <label for="photo" class="form-label">Photo (Optional, Allowed Formats: PNG, JPG/JPEG, BMP)</label>
+                            <input type="file" id="photo" name="photo" class="form-control" accept=".png, .jpg, .jpeg, .bmp">
+                        </div>
+
+                        <!-- Description field -->
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description (Optional, Max Length: 10000)</label>
+                            <textarea id="description" name="description" class="form-control" maxlength="10000" rows="4"></textarea>
+                        </div>
+
+                        <!-- Business Type dropdown -->
+                        <div class="mb-3">
+                            <label for="business_type" class="form-label">Business Type (Required)</label>
+                            <select id="business_type" name="business_type" class="form-select" required>
+                                <option value="">Select Business Type</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Wholesale">Wholesale</option>
+                                <option value="Service">Service</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                            </select>
+                        </div>
+
+                        <!-- Contact Person Name -->
+                        <div class="mb-3">
+                            <label for="contact_person_name" class="form-label">Contact Person Name (Required, Max Length: 100)</label>
+                            <input type="text" id="contact_person_name" name="contact_person_name" class="form-control" maxlength="100" required>
+                        </div>
+
+                        <!-- Contact Person Phone Number -->
+                        <div class="mb-3">
+                            <label for="contact_person_phone" class="form-label">Contact Person Phone Number (Required, Max Length: 15)</label>
+                            <input type="text" id="contact_person_phone" name="contact_person_phone" class="form-control" maxlength="15" required>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (for optional interactive components like tooltips, modals, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
